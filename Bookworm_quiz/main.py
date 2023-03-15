@@ -34,7 +34,7 @@ print(f"Hello {player}! Welcome to the world of books!")
 sleep(2)
 print("Let's explore how vast your knowledge in books is by taking this short quiz!📚")
 sleep(2)
-print("There are two levels of difficultyvin the game, Easy and Hard. If you make it past the easy round then look forward for the next level.")
+print("There are two levels of difficulty in the game, Easy and Hard. If you make it past the easy round then look forward for the next level.")
 sleep(5)
 
 print("Ready?... Start!")
@@ -55,7 +55,278 @@ while qns > 0:
                     "4. Daniel Radcliffe "]
             print(choices)    #list the choices
             answer = input("Answer: ")
-            valid_answer = answer.isnumeric()
+
+            try:
+                int(answer)
+                if int(answer) == 3 :
+                    print("Correct! Well done. \n")
+                    correct_answers.append(1)  #append value to the no. of correct answers
+                else:
+                    print(f"Incorrect! The answer is {choices[2]} \n")
+                    sleep(1)
+            except:
+                print("Incorrect! The answer must be a number. \n")
+                break
+            
+
+        elif question == questions[1]:
+            choices = ["1. 1984 ",
+                    "2. The Old Man and the Sea",
+                    "3. Catcher and the Rye",
+                    "4. To Kill a Mockingbird"]
+            print(choices)
+            answer = input("Answer: ")
+            try:
+                int(answer)
+                if answer == 1 :
+                    print("Correct! Well done. \n")
+                    correct_answers.append(1)
+                else:
+                    print(f"Incorrect! The answer is {choices[0]}. \n")
+                    sleep(1)
+            except:
+                print("Incorrect! The answer must be a number. \n")
+                break
+
+        elif question == questions[2]:
+            choices = ["1. Dracula ",
+                    "2. The Strange Case of Dr. Jekyll and Mr. Hyde ",
+                    "3. The Legend of Sleepy Hollow ",
+                    "4. Frankenstein "]
+            print(choices)
+            answer = input("Answer: ")
+            try:
+                int(answer)
+                if answer == 4 :
+                    print("Correct! Well done. \n")
+                    correct_answers.append(1)
+                else:
+                    print(f"Incorrect! The answer is {choices[3]}. \n")
+            except:
+                print("Incorrect! The answer must be a number. \n")
+                break
+
+        elif question == questions[3]:
+            choices = ["1. The Little Prince ",
+                    "2. The Lord of the Rings ",
+                    "3. Harry Potter and the Philosopher's Stone ",
+                    "4. The Da Vinci Code "]
+            print(choices)
+            answer = input("Answer: ")
+            try:
+                int(answer)
+                if answer == 2 :
+                    print("Correct! Well done. \n")
+                    correct_answers.append(1)
+                else:
+                    print(f"Incorrect! The answer is {choices[1]}. \n")
+            except:
+                print("Incorrect! The answer must be a number. \n")
+                break
+
+        elif question == questions[4]:
+            choices = ["1. Beatrix Potter ",
+                    "2. Roald Dahl ",
+                    "3. Dr. Seuss ",
+                    "4. A.A. Milne "]
+            print(choices)
+            answer = input("Answer: ")
+            try:
+                int(answer)
+                if answer == 3 :
+                    print("Correct! Well done. \n")
+                    correct_answers.append(1)
+                else:
+                    print(f"Incorrect! The answer is {choices[2]}. \n")
+            except:
+                print("Incorrect! The answer must be a number. \n")
+                break
+
+        elif question == questions[5]:
+            choices = ["1. Ian Fleming ",
+                    "2. Joseph Conrad ",
+                    "3. John Buchan ",
+                    "4. Graham Greene "]
+            print(choices)
+            answer = input("Answer: ")
+            try:
+                int(answer)
+                if answer == 1 :
+                    print("Correct! Well done. \n")
+                    correct_answers.append(1)
+                else:
+                    print(f"Incorrect! The answer is {choices[0]}. \n")
+            except:
+                print("Incorrect! The answer must be a number. \n")
+                break
+
+        elif question == questions[6]:
+            choices = ["1. 8 ",
+                    "2. 5 ",
+                    "3. 6 ",
+                    "4. 7 "]
+            print(choices)
+            answer = input("Answer: ")
+            try:
+                int(answer)
+                if answer == 4 :
+                    print("Correct! Well done. \n")
+                    correct_answers.append(1)
+                else:
+                    print(f"Incorrect! The answer is {choices[3]}. \n")
+            except:
+                print("Incorrect! The answer must be a number. \n")
+                break
+
+        elif question == questions[7]:
+            choices = ["1. Joey Potter ",
+                    "2. James Potter ",
+                    "3. Frank Potter ",
+                    "4. Hairy Potter "]
+            print(choices)
+            answer = input("Answer: ")
+            try:
+                int(answer)
+                if answer == 2 :
+                    print("Correct! Well done. \n")
+                    correct_answers.append(1)
+                else:
+                    print(f"Incorrect! The answer is {choices[1]}. \n")
+            except:
+                print("Incorrect! The answer must be a number. \n")
+                break
+
+        elif question == questions[8]:
+            choices = ["1. F. Scott Fitzgerald ",
+                    "2. Stephen King ",
+                    "3. William Golding ",
+                    "4. Hunter Fox "]
+            print(choices)
+            answer = input("Answer: ")
+            try:
+                int(answer)
+                if answer == 3 :
+                    print("Correct! Well done. \n")
+                    correct_answers.append(1)
+                else:
+                    print(f"Incorrect! The answer is {choices[2]}. \n")
+            except:
+                print("Incorrect! The answer must be a number. \n")
+                break
+
+        elif question == questions[9]:
+            choices = ["1. A Case of Identity ",
+                    "2. A Study in Scarlet ",
+                    "3. The Sign of the Four ",
+                    "4. The Doings of Raffles Haw "]
+            print(choices)
+            answer = input("Answer: ")
+            try:
+                int(answer)
+                if answer == 2 :
+                    print("Correct! Well done. \n")
+                    correct_answers.append(1)
+                else:
+                    print(f"Incorrect! The answer is {choices[1]}. \n")
+            except:
+                print("Incorrect! The answer must be a number. \n")
+                break
+    
+    if qns == 10:
+
+        #only proceed to next level if correct answers is >= 9
+        # using the len() which returns the number
+        # of elements in the list
+        if len(correct_answers) >= 9:
+            print(f"Congratulations {player}!🎉🎊 You are a Bookworm! \nYou scored {len(correct_answers)} out of 10.")
+            print("Would you like to go to the next level?\n")
+            next_level = int(input("Press 1. for YES or Press 0. for NO \n"))
+            if next_level == 1:
+                for diff_question in diff_questions:
+                    print(diff_question)
+                    if diff_question == diff_questions[0]:
+                        choices = ["1. Lincoln Island ",
+                                "2. Vulcania Island ",
+                                "3. Prometheus Island ",
+                                "4. Neptune Island "]
+                        print(choices)
+                        answer = input("Answer: ")
+                        if answer == 1 :
+                            print("Correct! Well done. \n")
+                            correct_answers.append(0)
+                        else:
+                            print(f"Incorrect! The answer is {choices[1]}. \n")
+
+                    elif diff_question == diff_questions[1]:
+                        choices = ["1. Charles Dickens ",
+                                "2. Hans Christian Andersen ",
+                                "3. Lewis Carroll ",
+                                "4. Oscar Wilde "]
+                        print(choices)
+                        answer = input("Answer: ")
+                        if answer == 2 :
+                            print("Correct! Well done. \n")
+                            correct_answers.append(1)
+                        else:
+                            print(f"Incorrect! The answer is {choices[1]}. \n")
+
+                    elif diff_question == diff_questions[2]:
+                        choices = ["1. My Hatred ",
+                                "2. My Sadness ",
+                                "3. My Desire ",
+                                "4. My Struggle "]
+                        print(choices)
+                        answer = input("Answer: ")
+                        if answer == 4 :
+                            print("Correct! Well done. \n")
+                            correct_answers.append(1)
+                        else:
+                            print(f"Incorrect! The answer is {choices[3]}. \n")
+
+                    elif diff_question == diff_questions[3]:
+                        choices = ["1. Joe Sugg ",
+                                "2. Zoe Sugg ",
+                                "3. Joe Weller ",
+                                "4. Alfie Deyes "]
+                        print(choices)
+                        answer = input("Answer: ")
+                        if answer == 1 :
+                            print("Correct! Well done. \n")
+                            correct_answers.append(1)
+                        else:
+                            print(f"Incorrect! The answer is {choices[0]}. \n")
+
+                    elif diff_question == diff_questions[4]:
+                        choices = ["1. Granny Weatherwax ",
+                                "2. Nanny Ogg ",
+                                "3. Winny Hathersham ",
+                                "4. Magrat Garlick "]
+                        print(choices)
+                        answer = input("Answer: ")
+                        if answer == 3 :
+                            print("Correct! Well done. \n")
+                            correct_answers.append(1)
+                        else:
+                            print(f"Incorrect! The answer is {choices[2]}. \n")
+
+                print(f"Congratulations, {player} on making it through both levels🎉🎊!You are a Bookworm! \nYou scored {len(correct_answers)} out of 15.")
+                print("Thankyou for playing the game my fellow nerd!")
+            else:
+                print("Thankyou for playing the game my fellow nerd!")
+
+        #correct answers are less than 9
+        elif len(correct_answers) < 9:
+            print(f"Congratulations {player}🎉 \nYou scored {len(correct_answers)} out of 10.")
+            print("Thankyou for playing the game!")
+
+        else:
+            print("Oops! Sorry you input the wrong values. \nTry again.")
+    
+    else:
+        continue
+        
+
+""" valid_answer = answer.isnumeric()
             if valid_answer:
                 if answer == 3 :
                     print("Correct! Well done. \n")
@@ -65,208 +336,4 @@ while qns > 0:
                     sleep(1)
             else:
                 print("Incorrect! The answer must be a number. \n")
-                continue
-
-        elif question == questions[1]:
-            choices = ["1. 1984 ",
-                    "2. The Old Man and the Sea",
-                    "3. Catcher and the Rye",
-                    "4. To Kill a Mockingbird"]
-            print(choices)
-            answer = input("Answer: ")
-            if answer == 1 :
-                print("Correct! Well done. \n")
-                correct_answers.append(1)
-            else:
-                print(f"Incorrect! The answer is {choices[0]}. \n")
-                sleep(1)
-
-        elif question == questions[2]:
-            choices = ["1. Dracula ",
-                    "2. The Strange Case of Dr. Jekyll and Mr. Hyde ",
-                    "3. The Legend of Sleepy Hollow ",
-                    "4. Frankenstein "]
-            print(choices)
-            answer = input("Answer: ")
-            if answer == 4 :
-                print("Correct! Well done. \n")
-                correct_answers.append(1)
-            else:
-                print(f"Incorrect! The answer is {choices[3]}. \n")
-
-        elif question == questions[3]:
-            choices = ["1. The Little Prince ",
-                    "2. The Lord of the Rings ",
-                    "3. Harry Potter and the Philosopher's Stone ",
-                    "4. The Da Vinci Code "]
-            print(choices)
-            answer = input("Answer: ")
-            if answer == 2 :
-                print("Correct! Well done. \n")
-                correct_answers.append(1)
-            else:
-                print(f"Incorrect! The answer is {choices[1]}. \n")
-
-        elif question == questions[4]:
-            choices = ["1. Beatrix Potter ",
-                    "2. Roald Dahl ",
-                    "3. Dr. Seuss ",
-                    "4. A.A. Milne "]
-            print(choices)
-            answer = input("Answer: ")
-            if answer == 3 :
-                print("Correct! Well done. \n")
-                correct_answers.append(1)
-            else:
-                print(f"Incorrect! The answer is {choices[2]}. \n")
-
-        elif question == questions[5]:
-            choices = ["1. Ian Fleming ",
-                    "2. Joseph Conrad ",
-                    "3. John Buchan ",
-                    "4. Graham Greene "]
-            print(choices)
-            answer = input("Answer: ")
-            if answer == 1 :
-                print("Correct! Well done. \n")
-                correct_answers.append(1)
-            else:
-                print(f"Incorrect! The answer is {choices[0]}. \n")
-
-        elif question == questions[6]:
-            choices = ["1. 8 ",
-                    "2. 5 ",
-                    "3. 6 ",
-                    "4. 7 "]
-            print(choices)
-            answer = input("Answer: ")
-            if answer == 4 :
-                print("Correct! Well done. \n")
-                correct_answers.append(1)
-            else:
-                print(f"Incorrect! The answer is {choices[3]}. \n")
-
-        elif question == questions[7]:
-            choices = ["1. Joey Potter ",
-                    "2. James Potter ",
-                    "3. Frank Potter ",
-                    "4. Hairy Potter "]
-            print(choices)
-            answer = input("Answer: ")
-            if answer == 2 :
-                print("Correct! Well done. \n")
-                correct_answers.append(1)
-            else:
-                print(f"Incorrect! The answer is {choices[1]}. \n")
-
-        elif question == questions[8]:
-            choices = ["1. F. Scott Fitzgerald ",
-                    "2. Stephen King ",
-                    "3. William Golding ",
-                    "4. Hunter Fox "]
-            print(choices)
-            answer = input("Answer: ")
-            if answer == 3 :
-                print("Correct! Well done. \n")
-                correct_answers.append(1)
-            else:
-                print(f"Incorrect! The answer is {choices[2]}. \n")
-
-        elif question == questions[9]:
-            choices = ["1. A Case of Identity ",
-                    "2. A Study in Scarlet ",
-                    "3. The Sign of the Four ",
-                    "4. The Doings of Raffles Haw "]
-            print(choices)
-            answer = input("Answer: ")
-            if answer == 2 :
-                print("Correct! Well done. \n")
-                correct_answers.append(1)
-            else:
-                print(f"Incorrect! The answer is {choices[1]}. \n")
-    break
-
-#only proceed to next level if correct answers is >= 9
-# using the len() which returns the number
-# of elements in the list
-if len(correct_answers) >= 9:
-    print(f"Congratulations🎉🎊!You are a Bookworm! \nYou scored {len(correct_answers)} out of 10.")
-    print("Would you like to go to the next level?\n")
-    next_level = int(input("Press 1. for YES or Press 0. for NO \n"))
-    if next_level == 1:
-        for diff_question in diff_questions:
-            print(diff_question)
-            if diff_question == diff_questions[0]:
-                choices = ["1. Lincoln Island ",
-                        "2. Vulcania Island ",
-                        "3. Prometheus Island ",
-                        "4. Neptune Island "]
-                print(choices)
-                answer = input("Answer: ")
-                if answer == 1 :
-                    print("Correct! Well done. \n")
-                    correct_answers.append(0)
-                else:
-                    print(f"Incorrect! The answer is {choices[1]}. \n")
-
-            elif diff_question == diff_questions[1]:
-                choices = ["1. Charles Dickens ",
-                        "2. Hans Christian Andersen ",
-                        "3. Lewis Carroll ",
-                        "4. Oscar Wilde "]
-                print(choices)
-                answer = input("Answer: ")
-                if answer == 2 :
-                    print("Correct! Well done. \n")
-                    correct_answers.append(1)
-                else:
-                    print(f"Incorrect! The answer is {choices[1]}. \n")
-
-            elif diff_question == diff_questions[2]:
-                choices = ["1. My Hatred ",
-                        "2. My Sadness ",
-                        "3. My Desire ",
-                        "4. My Struggle "]
-                print(choices)
-                answer = input("Answer: ")
-                if answer == 4 :
-                    print("Correct! Well done. \n")
-                    correct_answers.append(1)
-                else:
-                    print(f"Incorrect! The answer is {choices[3]}. \n")
-
-            elif diff_question == diff_questions[3]:
-                choices = ["1. Joe Sugg ",
-                        "2. Zoe Sugg ",
-                        "3. Joe Weller ",
-                        "4. Alfie Deyes "]
-                print(choices)
-                answer = input("Answer: ")
-                if answer == 1 :
-                    print("Correct! Well done. \n")
-                    correct_answers.append(1)
-                else:
-                    print(f"Incorrect! The answer is {choices[0]}. \n")
-
-            elif diff_question == diff_questions[4]:
-                choices = ["1. Granny Weatherwax ",
-                        "2. Nanny Ogg ",
-                        "3. Winny Hathersham ",
-                        "4. Magrat Garlick "]
-                print(choices)
-                answer = input("Answer: ")
-                if answer == 3 :
-                    print("Correct! Well done. \n")
-                    correct_answers.append(1)
-                else:
-                    print(f"Incorrect! The answer is {choices[2]}. \n")
-
-        print(f"Congratulations on making it through both levels🎉🎊!You are a Bookworm! \nYou scored {len(correct_answers)} out of 15.")
-        print("Thankyou for playing the game my fellow nerd!")
-    else:
-        print("Thankyou for playing the game my fellow nerd!")
-
-else:
-    print(f"Congratulations🎉 \nYou scored {len(correct_answers)} out of 10.")
-    print("Thankyou for playing the game!")
-        
+                break """        
