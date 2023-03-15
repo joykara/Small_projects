@@ -67,6 +67,8 @@ while asked_qns <= len(questions):
                     sleep(1)
             except:
                 print("Incorrect! The answer must be a number. \nRestart the game! \n \n".format(correct_answers))
+                correct_answers = []
+                asked_qns = 0
                 sleep(1)
                 break
             
@@ -89,6 +91,8 @@ while asked_qns <= len(questions):
                     sleep(1)
             except:
                 print("Incorrect! The answer must be a number. \nRestart the game! \n \n".format(correct_answers))
+                correct_answers = []
+                asked_qns = 0
                 sleep(1)
                 break
 
@@ -109,6 +113,8 @@ while asked_qns <= len(questions):
                     print(f"Incorrect! The answer is {choices[3]}. \n")
             except:
                 print("Incorrect! The answer must be a number. \nRestart the game! \n \n".format(correct_answers))
+                correct_answers = []
+                asked_qns = 0
                 sleep(1)
                 break
 
@@ -129,6 +135,8 @@ while asked_qns <= len(questions):
                     print(f"Incorrect! The answer is {choices[1]}. \n")
             except:
                 print("Incorrect! The answer must be a number. \nRestart the game! \n \n".format(correct_answers))
+                correct_answers = []
+                asked_qns = 0
                 sleep(1)
                 break
 
@@ -149,6 +157,8 @@ while asked_qns <= len(questions):
                     print(f"Incorrect! The answer is {choices[2]}. \n")
             except:
                 print("Incorrect! The answer must be a number. \nRestart the game! \n \n".format(correct_answers))
+                correct_answers = []
+                asked_qns = 0
                 sleep(1)
                 break
 
@@ -169,6 +179,8 @@ while asked_qns <= len(questions):
                     print(f"Incorrect! The answer is {choices[0]}. \n")
             except:
                 print("Incorrect! The answer must be a number. \nRestart the game! \n \n".format(correct_answers))
+                correct_answers = []
+                asked_qns = 0
                 sleep(1)
                 break
 
@@ -189,6 +201,8 @@ while asked_qns <= len(questions):
                     print(f"Incorrect! The answer is {choices[3]}. \n")
             except:
                 print("Incorrect! The answer must be a number. \nRestart the game! \n \n".format(correct_answers))
+                correct_answers = []
+                asked_qns = 0
                 sleep(1)
                 break
 
@@ -209,6 +223,8 @@ while asked_qns <= len(questions):
                     print(f"Incorrect! The answer is {choices[1]}. \n")
             except:
                 print("Incorrect! The answer must be a number. \nRestart the game! \n \n".format(correct_answers))
+                correct_answers = []
+                asked_qns = 0
                 sleep(1)
                 break
 
@@ -229,6 +245,8 @@ while asked_qns <= len(questions):
                     print(f"Incorrect! The answer is {choices[2]}. \n")
             except:
                 print("Incorrect! The answer must be a number. \nRestart the game! \n \n".format(correct_answers))
+                correct_answers = []
+                asked_qns = 0
                 sleep(1)
                 break
 
@@ -249,6 +267,8 @@ while asked_qns <= len(questions):
                     print(f"Incorrect! The answer is {choices[1]}. \n")
             except:
                 print("Incorrect! The answer must be a number. \nRestart the game! \n \n".format(correct_answers))
+                correct_answers = []
+                asked_qns = 0
                 sleep(1)
                 break
 
