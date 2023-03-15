@@ -27,23 +27,23 @@ diff_questions = [
   "QUESTION 15: \n In Terry Pratchett's Discworld novel 'Wyrd Sisters', which of these are not one of the three main witches?"
 ]
 
-player = input("What is your name?")
+player = input("What is your name? ")
 sleep(1)  #delay execution of the next code
 
 print(f"Hello {player}! Welcome to the world of books!")
 sleep(2)
 print("Let's explore how vast your knowledge in books is by taking this short quiz!📚")
-sleep(2)
 print("There are two levels of difficulty in the game, Easy and Hard. If you make it past the easy round then look forward for the next level.")
-sleep(5)
+sleep(8)
 
 print("Ready?... Start!")
 sleep(2)
 
 correct_answers = []  #append values of total correct answers
-qns = 15
+asked_qns = 0
 
-while qns > 0:
+#
+while asked_qns <= len(questions):
     for question in questions:
         print(question)  #print each question in the list
 
@@ -55,6 +55,7 @@ while qns > 0:
                     "4. Daniel Radcliffe "]
             print(choices)    #list the choices
             answer = input("Answer: ")
+            asked_qns += 1
 
             try:
                 int(answer)
@@ -65,7 +66,8 @@ while qns > 0:
                     print(f"Incorrect! The answer is {choices[2]} \n")
                     sleep(1)
             except:
-                print("Incorrect! The answer must be a number. \n")
+                print("Incorrect! The answer must be a number. \nRestart the game! \n \n".format(correct_answers))
+                sleep(1)
                 break
             
 
@@ -76,16 +78,18 @@ while qns > 0:
                     "4. To Kill a Mockingbird"]
             print(choices)
             answer = input("Answer: ")
+            asked_qns += 1
             try:
                 int(answer)
-                if answer == 1 :
+                if int(answer) == 1 :
                     print("Correct! Well done. \n")
                     correct_answers.append(1)
                 else:
                     print(f"Incorrect! The answer is {choices[0]}. \n")
                     sleep(1)
             except:
-                print("Incorrect! The answer must be a number. \n")
+                print("Incorrect! The answer must be a number. \nRestart the game! \n \n".format(correct_answers))
+                sleep(1)
                 break
 
         elif question == questions[2]:
@@ -95,15 +99,17 @@ while qns > 0:
                     "4. Frankenstein "]
             print(choices)
             answer = input("Answer: ")
+            asked_qns += 1
             try:
                 int(answer)
-                if answer == 4 :
+                if int(answer) == 4 :
                     print("Correct! Well done. \n")
                     correct_answers.append(1)
                 else:
                     print(f"Incorrect! The answer is {choices[3]}. \n")
             except:
-                print("Incorrect! The answer must be a number. \n")
+                print("Incorrect! The answer must be a number. \nRestart the game! \n \n".format(correct_answers))
+                sleep(1)
                 break
 
         elif question == questions[3]:
@@ -113,15 +119,17 @@ while qns > 0:
                     "4. The Da Vinci Code "]
             print(choices)
             answer = input("Answer: ")
+            asked_qns += 1
             try:
                 int(answer)
-                if answer == 2 :
+                if int(answer) == 2 :
                     print("Correct! Well done. \n")
                     correct_answers.append(1)
                 else:
                     print(f"Incorrect! The answer is {choices[1]}. \n")
             except:
-                print("Incorrect! The answer must be a number. \n")
+                print("Incorrect! The answer must be a number. \nRestart the game! \n \n".format(correct_answers))
+                sleep(1)
                 break
 
         elif question == questions[4]:
@@ -131,15 +139,17 @@ while qns > 0:
                     "4. A.A. Milne "]
             print(choices)
             answer = input("Answer: ")
+            asked_qns += 1
             try:
                 int(answer)
-                if answer == 3 :
+                if int(answer) == 3 :
                     print("Correct! Well done. \n")
                     correct_answers.append(1)
                 else:
                     print(f"Incorrect! The answer is {choices[2]}. \n")
             except:
-                print("Incorrect! The answer must be a number. \n")
+                print("Incorrect! The answer must be a number. \nRestart the game! \n \n".format(correct_answers))
+                sleep(1)
                 break
 
         elif question == questions[5]:
@@ -149,15 +159,17 @@ while qns > 0:
                     "4. Graham Greene "]
             print(choices)
             answer = input("Answer: ")
+            asked_qns += 1
             try:
                 int(answer)
-                if answer == 1 :
+                if int(answer) == 1 :
                     print("Correct! Well done. \n")
                     correct_answers.append(1)
                 else:
                     print(f"Incorrect! The answer is {choices[0]}. \n")
             except:
-                print("Incorrect! The answer must be a number. \n")
+                print("Incorrect! The answer must be a number. \nRestart the game! \n \n".format(correct_answers))
+                sleep(1)
                 break
 
         elif question == questions[6]:
@@ -167,15 +179,17 @@ while qns > 0:
                     "4. 7 "]
             print(choices)
             answer = input("Answer: ")
+            asked_qns += 1
             try:
                 int(answer)
-                if answer == 4 :
+                if int(answer) == 4 :
                     print("Correct! Well done. \n")
                     correct_answers.append(1)
                 else:
                     print(f"Incorrect! The answer is {choices[3]}. \n")
             except:
-                print("Incorrect! The answer must be a number. \n")
+                print("Incorrect! The answer must be a number. \nRestart the game! \n \n".format(correct_answers))
+                sleep(1)
                 break
 
         elif question == questions[7]:
@@ -185,15 +199,17 @@ while qns > 0:
                     "4. Hairy Potter "]
             print(choices)
             answer = input("Answer: ")
+            asked_qns += 1
             try:
                 int(answer)
-                if answer == 2 :
+                if int(answer) == 2 :
                     print("Correct! Well done. \n")
                     correct_answers.append(1)
                 else:
                     print(f"Incorrect! The answer is {choices[1]}. \n")
             except:
-                print("Incorrect! The answer must be a number. \n")
+                print("Incorrect! The answer must be a number. \nRestart the game! \n \n".format(correct_answers))
+                sleep(1)
                 break
 
         elif question == questions[8]:
@@ -203,15 +219,17 @@ while qns > 0:
                     "4. Hunter Fox "]
             print(choices)
             answer = input("Answer: ")
+            asked_qns += 1
             try:
                 int(answer)
-                if answer == 3 :
+                if int(answer) == 3 :
                     print("Correct! Well done. \n")
                     correct_answers.append(1)
                 else:
                     print(f"Incorrect! The answer is {choices[2]}. \n")
             except:
-                print("Incorrect! The answer must be a number. \n")
+                print("Incorrect! The answer must be a number. \nRestart the game! \n \n".format(correct_answers))
+                sleep(1)
                 break
 
         elif question == questions[9]:
@@ -221,18 +239,20 @@ while qns > 0:
                     "4. The Doings of Raffles Haw "]
             print(choices)
             answer = input("Answer: ")
+            asked_qns += 1
             try:
                 int(answer)
-                if answer == 2 :
+                if int(answer) == 2 :
                     print("Correct! Well done. \n")
                     correct_answers.append(1)
                 else:
                     print(f"Incorrect! The answer is {choices[1]}. \n")
             except:
-                print("Incorrect! The answer must be a number. \n")
+                print("Incorrect! The answer must be a number. \nRestart the game! \n \n".format(correct_answers))
+                sleep(1)
                 break
-    
-    if qns == 10:
+
+    if asked_qns == 10:
 
         #only proceed to next level if correct answers is >= 9
         # using the len() which returns the number
@@ -240,7 +260,7 @@ while qns > 0:
         if len(correct_answers) >= 9:
             print(f"Congratulations {player}!🎉🎊 You are a Bookworm! \nYou scored {len(correct_answers)} out of 10.")
             print("Would you like to go to the next level?\n")
-            next_level = int(input("Press 1. for YES or Press 0. for NO \n"))
+            next_level = int(input("Press 1 for YES or Press 0 for NO \n"))
             if next_level == 1:
                 for diff_question in diff_questions:
                     print(diff_question)
@@ -251,7 +271,8 @@ while qns > 0:
                                 "4. Neptune Island "]
                         print(choices)
                         answer = input("Answer: ")
-                        if answer == 1 :
+                        asked_qns += 1
+                        if int(answer) == 1 :
                             print("Correct! Well done. \n")
                             correct_answers.append(0)
                         else:
@@ -264,7 +285,8 @@ while qns > 0:
                                 "4. Oscar Wilde "]
                         print(choices)
                         answer = input("Answer: ")
-                        if answer == 2 :
+                        asked_qns += 1
+                        if int(answer) == 2 :
                             print("Correct! Well done. \n")
                             correct_answers.append(1)
                         else:
@@ -277,7 +299,8 @@ while qns > 0:
                                 "4. My Struggle "]
                         print(choices)
                         answer = input("Answer: ")
-                        if answer == 4 :
+                        asked_qns += 1
+                        if int(answer) == 4 :
                             print("Correct! Well done. \n")
                             correct_answers.append(1)
                         else:
@@ -290,7 +313,8 @@ while qns > 0:
                                 "4. Alfie Deyes "]
                         print(choices)
                         answer = input("Answer: ")
-                        if answer == 1 :
+                        asked_qns += 1
+                        if int(answer) == 1 :
                             print("Correct! Well done. \n")
                             correct_answers.append(1)
                         else:
@@ -303,7 +327,8 @@ while qns > 0:
                                 "4. Magrat Garlick "]
                         print(choices)
                         answer = input("Answer: ")
-                        if answer == 3 :
+                        asked_qns += 1
+                        if int(answer) == 3 :
                             print("Correct! Well done. \n")
                             correct_answers.append(1)
                         else:
@@ -313,27 +338,16 @@ while qns > 0:
                 print("Thankyou for playing the game my fellow nerd!")
             else:
                 print("Thankyou for playing the game my fellow nerd!")
+                break
 
         #correct answers are less than 9
-        elif len(correct_answers) < 9:
+        else:
             print(f"Congratulations {player}🎉 \nYou scored {len(correct_answers)} out of 10.")
             print("Thankyou for playing the game!")
 
-        else:
-            print("Oops! Sorry you input the wrong values. \nTry again.")
     
     else:
         continue
         
 
-""" valid_answer = answer.isnumeric()
-            if valid_answer:
-                if answer == 3 :
-                    print("Correct! Well done. \n")
-                    correct_answers.append(1)  #append value to the no. of correct answers
-                else:
-                    print(f"Incorrect! The answer is {choices[2]} \n")
-                    sleep(1)
-            else:
-                print("Incorrect! The answer must be a number. \n")
-                break """        
+ 
